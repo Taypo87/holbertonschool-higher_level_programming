@@ -2,6 +2,8 @@
 if __name__ == "__main__":
     import sys
     count = (len(sys.argv) - 1)
+    if count == 0:
+        print("0 arguments.")
     if count > 1:
         print("{:d} arguments:".format(count))
     else:
