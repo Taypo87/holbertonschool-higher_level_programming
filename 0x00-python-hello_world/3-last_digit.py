@@ -5,6 +5,7 @@ if number < 0:
     number = (number * -1)
     digit = (number % 10)
     digit = (digit * -1)
+    number = (number * -1)
 else:
     digit = (number % 10)
 if digit < 0:
