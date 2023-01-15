@@ -5,4 +5,3 @@ def multiple_returns(sentence):
     if sentence is "":
         firstl = "None"
     return(strlen, firstl)
-    
