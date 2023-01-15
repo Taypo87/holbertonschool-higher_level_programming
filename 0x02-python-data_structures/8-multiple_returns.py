@@ -4,5 +4,5 @@ def multiple_returns(sentence):
     firstl = sentence[:1]
     if sentence is "":
         firstl = "None"
-    tuple_ret = strlen, firstl
-    return(tuple_ret)
+    return(strlen, firstl)
+    
