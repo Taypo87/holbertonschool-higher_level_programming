@@ -5,4 +5,4 @@ def multiple_returns(sentence):
     if sentence is "":
         first = None
     tuple_ret = strlen, first
-    return (tuple_ret)
+    return(tuple_ret)
