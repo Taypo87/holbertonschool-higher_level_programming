@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+"""Class documentation"""
+
 class Square:
     """class Square with private instance attribute size
     """
