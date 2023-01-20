@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This is the print_square module.
 The print_square module provides a simple function print_square()
