@@ -34,7 +34,7 @@ class Rectangle:
         self._width = width
 
     @property
-    def height(self, height):
+    def height(self):
         """method: set height getter
         """
         if not isinstance(self.height, int):
