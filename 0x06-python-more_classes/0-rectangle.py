@@ -41,7 +41,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if self.__height < 0:
             raise ValueError("height must be >= 0")
-        self.__height = height
+        return self.__heigth
 
     @height.setter
     def height(self, height):
@@ -50,3 +50,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if self.__height < 0:
             raise ValueError("height must be >= 0")
+        self.__heigth = height
