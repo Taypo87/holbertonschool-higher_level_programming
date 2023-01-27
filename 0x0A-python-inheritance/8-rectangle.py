@@ -18,6 +18,7 @@ class Rectangle(BaseGeometry):
     """Class rectangle, defines shape"""
 
     def __init__(self, width, height):
+        """defines height and width of a rectangle"""
         super().integer_validator("width", width)
         super().integer_validator("height", height)
         self.__width = width
