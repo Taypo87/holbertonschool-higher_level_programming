@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""function that opens file and writes to stdout"""
+
 
 def read_file(filename=""):
-  r =  with open(filename)
-  print(r.read())
+    """opens file and prints to stdout"""
+    r = with open(filename)
+    print(r.read())
