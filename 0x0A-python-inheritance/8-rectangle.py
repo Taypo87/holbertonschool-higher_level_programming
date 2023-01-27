@@ -2,7 +2,7 @@
 
 
 class BaseGeometry:
-    """Class """
+    """Class methods to verify types"""
 
     def area(self):
         raise Exception("area() is not implemented")
@@ -14,9 +14,9 @@ class BaseGeometry:
             raise ValueError("{} must be greater than 0".format(name))
 
 
-
-
 class Rectangle(BaseGeometry):
+    """Class rectangle, defines shape"""
+
     def __init__(self, width, height):
         super().integer_validator("width", width)
         super().integer_validator("height", height)
