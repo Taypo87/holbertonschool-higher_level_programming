@@ -56,16 +56,20 @@ class Rectangle(Base):
         """x setter"""
         if self.__x < 0:
             raise ValueError("x must be >= 0")
+        if self.__x is not int:
+            raise TypeError("x must be an integer")
         self.__x = x
 
     @property
     def y(self):
         """get rectangle y"""
-        if self.__y < 0:
-            raise ValueError("y must be >= 0")
         return self.__y
 
     @y.setter
     def y(self, y):
         """y setter"""
+        if self.__y < 0:
+            raise ValueError("y must be >= 0")
+        if self.__y is not int:
+            raise TypeError("y must be an integer")
         self.__y = y
