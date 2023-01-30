@@ -11,7 +11,9 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    def to_json(self):
-        '''method to_json'''
 
+    def to_json(self, attrs=None):
+        '''method to_json'''
+        if isinstance(attrs, str):
+            return self.__dict__[attrs]
         return self.__dict__
