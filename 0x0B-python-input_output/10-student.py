@@ -14,6 +14,13 @@ class Student:
 
     def to_json(self, attrs=None):
         '''method to_json'''
-        if isinstance(attrs, str):
-            return self.__dict__[attrs]
-        return self.__dict__
+        if attrs is None or type(attrs) != list:
+            return self.__dict__
+        else:
+            tmp = {}
+            for i in attrs:
+                if type(i) != str:
+                    return self.__dict__
+                if i in self.__dict__.keys():
+                    tmp[i] = self.__dict__[i]
+            return tmp
