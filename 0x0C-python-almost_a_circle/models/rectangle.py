@@ -54,11 +54,15 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """x setter"""
+        if self.__x < 0:
+            raise ValueError("x must be >= 0")
         self.__x = x
 
     @property
     def y(self):
         """get rectangle y"""
+        if self.__y < 0:
+            raise ValueError("y must be >= 0")
         return self.__y
 
     @y.setter
