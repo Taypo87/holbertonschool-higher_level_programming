@@ -15,4 +15,4 @@ def __str__(self):
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
                                                          self.__x,
                                                          self.__y,
-                                                         self.__size)
+                                                         self.__height)
