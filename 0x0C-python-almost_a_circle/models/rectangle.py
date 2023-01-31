@@ -75,3 +75,43 @@ class Rectangle(Base):
     def area(self):
         """defines area of a rectangle"""
         return self.width * self.height
+
+    def display(self):
+        """Display The Rectangle Using  '#'"""
+        print(("\n" * self.__y) +
+              "\n".join(((" " * self.__x) + ("#" * self.__width))
+                        for i in range(self.__height)))
+
+    def __str__(self):
+        """String Informal of the Rectangle"""
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
+                                                                 self.__x,
+                                                                 self.__y,
+                                                                 self.__width,
+                                                                 self.__height)
+
+    def update(self, *args, **kwargs):
+        """ Update Multiple Atrr of The Rectangle"""
+        i = 0
+        if args:
+            for arg in args:
+                if i == 0:
+                    self.id = arg
+                if i == 1:
+                    self.width = arg
+                if i == 2:
+                    self.height = arg
+                if i == 3:
+                    self.x = arg
+                if i == 4:
+                    self.y = arg
+                i += 1
+        else:
+            for arg in kwargs:
+                setattr(self, arg, kwargs.get(arg))
+
+    def to_dictionary(self):
+        """returns the dictionary
+            representation of a Rectangle"""
+        return {'id': self.id, 'width': self.width,
+                'height': self.height, 'x': self.x, 'y': self.y}
