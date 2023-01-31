@@ -22,8 +22,9 @@ class Square(Rectangle):
             raise ValueError("size must be > 0")
         self.__size = size
 
+
 def __str__(self):
-        """String Informal of the Rectangle"""
+        """String Informal of the Square"""
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
                                                          self.__x,
                                                          self.__y,
