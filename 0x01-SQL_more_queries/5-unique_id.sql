@@ -1,4 +1,4 @@
 -- creates a table with a unique column 'id'
 
-CREATE TABLE IF NOT EXISTS id_not_null (id INT DEFAULT 1, name VARCHAR(256),
+CREATE TABLE IF NOT EXISTS unique_id (id INT DEFAULT 1, name VARCHAR(256),
 UNIQUE(id));
