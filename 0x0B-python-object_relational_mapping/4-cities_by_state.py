@@ -11,10 +11,10 @@ if __name__ == "__main__":
                          user=argv[1], passwd=argv[2], database=argv[3])
     cur = db.cursor()cur = db.cursor()
     cur .execute(
-        "cities.id, cities.name, states.name FROM cities join states ON cities.state_id = states.id;")
+        """cities.id, cities.name, states.name FROM cities
+         join states ON cities.state_id = states.id;""")
     fetch = cur.fetchall()
     for row in fetch:
         print(row)
     cur.close()
     db.close()
-    
