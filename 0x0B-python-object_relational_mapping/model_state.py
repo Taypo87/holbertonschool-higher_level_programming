@@ -2,8 +2,8 @@
 """ Module for state class and base instance"""
 
 
-from sqalchemy import Column, Integer, String
-from sqalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
