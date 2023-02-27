@@ -3,7 +3,7 @@
 
 
 from sqalchemy import Column, Integer, String
-from sqalchemy.ext.declaritve import declarative_base
+from sqalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
