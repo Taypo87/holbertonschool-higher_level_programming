@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Lists all states containing 'a' """
 
 import sqlalchemy
 from sqlalchemy import create_engine, select
