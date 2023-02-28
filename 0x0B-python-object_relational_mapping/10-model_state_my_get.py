@@ -17,6 +17,9 @@ if __name__ == '__main__':
     session = Session()
     query = select(State).where(State.name.like('{}'.format(argv[4])))
     results = engine.execute(query).fetchall()
-    for record in results:
-        print("{}".format(record.id))
+    if results is not None:
+        for record in results:
+            print("{}".format(record.id))
+    else:
+        print("Not found")
     session.close()
