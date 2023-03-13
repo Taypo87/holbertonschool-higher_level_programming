@@ -5,7 +5,8 @@ import requests
 
 if __name__ == '__main__':
     try:
-        request = requests.get("https://api.github.com/user",auth=(argv[1], argv[2]))
+        request = requests.get("https://api.github.com/user",
+                                auth=(argv[1], argv[2]))
         print(request.json()["id"])
     except:
         print("None")
