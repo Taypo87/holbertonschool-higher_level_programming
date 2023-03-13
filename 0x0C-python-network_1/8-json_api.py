@@ -6,7 +6,7 @@ from sys import argv
 from requests import get, post
 
 if __name__ == '__main__':
-    if argv[1]:
+    if len(argv) == 2:
         q = argv[1]
     else:
         q = ""
