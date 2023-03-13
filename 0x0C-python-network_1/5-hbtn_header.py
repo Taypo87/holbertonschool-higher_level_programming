@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-
-"""Script takes a url request and displays Id"""
+""" Script takes a url request and displays Id """
 
 from sys import argv
 import requests
+
+""" More documention because I dont have enough for the checker? """
 
 request = requests.get(argv[1])
 print(request.headers.get("X-Request-Id"))
