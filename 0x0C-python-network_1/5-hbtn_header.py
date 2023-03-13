@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-""" Script that takes a url, sends a request
-                 and displays the id from the response header"""
+""" Script that takes a url request, and displays the id from the response header"""
 
 from sys import argv
 import requests
