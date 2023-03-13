@@ -11,7 +11,7 @@ if __name__ == '__main__':
     else:
         q = ""
 
-    response = post("http://0.0.0.0:5000/search_user", data=q)
+    response = post("http://0.0.0.0:5000/search_user", data={'q': q})
     try:
         my_dict = response.json()
         id = my_dict.get('id')
